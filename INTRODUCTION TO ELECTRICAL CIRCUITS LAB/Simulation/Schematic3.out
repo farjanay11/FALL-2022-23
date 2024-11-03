@@ -1,0 +1,122 @@
+
+**** 11/26/22 23:02:54 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\ASUS\OneDrive - American International University-Bangladesh\Desktop\Simulation\Schematic3.sch
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+* Schematics Version 9.1 - Web Update 1
+* Sat Nov 26 23:02:54 2022
+
+
+
+** Analysis setup **
+.OP 
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "Schematic3.net"
+
+**** INCLUDING Schematic3.net ****
+* Schematics Netlist *
+
+
+
+R_R1         0 $N_0001  10  
+V_V1         0 $N_0001 80V
+R_R2         $N_0001 $N_0002  5  
+R_R3         $N_0003 $N_0002  8  
+R_R4         0 $N_0003  4  
+R_R5         0 $N_0003  8  
+R_R7         $N_0004 $N_0003  6  
+R_R8         0 $N_0004  2  
+R_R6         $N_0002 $N_0005  6  
+R_R9         0 $N_0005  4  
+
+**** RESUMING Schematic3.cir ****
+.INC "Schematic3.als"
+
+
+
+**** INCLUDING Schematic3.als ****
+* Schematics Aliases *
+
+.ALIASES
+R_R1            R1(1=0 2=$N_0001 )
+V_V1            V1(+=0 -=$N_0001 )
+R_R2            R2(1=$N_0001 2=$N_0002 )
+R_R3            R3(1=$N_0003 2=$N_0002 )
+R_R4            R4(1=0 2=$N_0003 )
+R_R5            R5(1=0 2=$N_0003 )
+R_R7            R7(1=$N_0004 2=$N_0003 )
+R_R8            R8(1=0 2=$N_0004 )
+R_R6            R6(1=$N_0002 2=$N_0005 )
+R_R9            R9(1=0 2=$N_0005 )
+.ENDALIASES
+
+
+**** RESUMING Schematic3.cir ****
+.probe
+
+
+.END
+
+**** 11/26/22 23:02:54 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\ASUS\OneDrive - American International University-Bangladesh\Desktop\Simulation\Schematic3.sch
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+($N_0001)  -80.0000                   ($N_0002)  -40.0000                       
+
+($N_0003)   -8.0000                   ($N_0004)   -2.0000                       
+
+($N_0005)  -16.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -1.600E+01
+
+    TOTAL POWER DISSIPATION   1.28E+03  WATTS
+
+
+**** 11/26/22 23:02:54 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\ASUS\OneDrive - American International University-Bangladesh\Desktop\Simulation\Schematic3.sch
+
+
+ ****     OPERATING POINT INFORMATION      TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .02
+

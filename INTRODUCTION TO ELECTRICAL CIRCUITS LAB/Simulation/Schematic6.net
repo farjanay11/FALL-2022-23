@@ -1,0 +1,8 @@
+* Schematics Netlist *
+
+
+
+V_V2         $N_0001 0  
++PULSE 0 10 0 0 0 1 
+R_R1         $N_0001 $N_0002  2k  
+L_L1         $N_0002 0  4  

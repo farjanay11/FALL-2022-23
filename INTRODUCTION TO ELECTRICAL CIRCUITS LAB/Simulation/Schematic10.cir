@@ -1,0 +1,23 @@
+* C:\Users\ASUS\OneDrive - American International University-Bangladesh\Desktop\Simulation\Schematic10.sch
+
+* Schematics Version 9.1 - Web Update 1
+* Sun Nov 27 00:09:26 2022
+
+
+
+** Analysis setup **
+.tran 0ns 16ms
+.OP 
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "Schematic10.net"
+.INC "Schematic10.als"
+
+
+.probe
+
+
+.END

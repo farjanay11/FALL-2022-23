@@ -1,0 +1,112 @@
+
+**** 11/24/22 21:34:07 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\ASUS\OneDrive - American International University-Bangladesh\Desktop\Iec Lab(\Circuit8.sch
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+* Schematics Version 9.1 - Web Update 1
+* Thu Nov 24 21:34:03 2022
+
+
+
+** Analysis setup **
+.OP 
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "Circuit8.net"
+
+**** INCLUDING Circuit8.net ****
+* Schematics Netlist *
+
+
+
+V_V1         $N_0001 0 15V
+R_R1         $N_0001 $N_0002  8  
+R_R5         $N_0001 $N_0003  10  
+R_R2         0 $N_0002  3  
+R_R3         $N_0002 $N_0003  5  
+R_R4         0 $N_0003  2  
+
+**** RESUMING Circuit8.cir ****
+.INC "Circuit8.als"
+
+
+
+**** INCLUDING Circuit8.als ****
+* Schematics Aliases *
+
+.ALIASES
+V_V1            V1(+=$N_0001 -=0 )
+R_R1            R1(1=$N_0001 2=$N_0002 )
+R_R5            R5(1=$N_0001 2=$N_0003 )
+R_R2            R2(1=0 2=$N_0002 )
+R_R3            R3(1=$N_0002 2=$N_0003 )
+R_R4            R4(1=0 2=$N_0003 )
+.ENDALIASES
+
+
+**** RESUMING Circuit8.cir ****
+.probe
+
+
+.END
+
+**** 11/24/22 21:34:07 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\ASUS\OneDrive - American International University-Bangladesh\Desktop\Iec Lab(\Circuit8.sch
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+($N_0001)   15.0000                   ($N_0002)    3.6986                       
+
+($N_0003)    2.7997                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -2.633E+00
+
+    TOTAL POWER DISSIPATION   3.95E+01  WATTS
+
+
+**** 11/24/22 21:34:07 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\ASUS\OneDrive - American International University-Bangladesh\Desktop\Iec Lab(\Circuit8.sch
+
+
+ ****     OPERATING POINT INFORMATION      TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .02
+

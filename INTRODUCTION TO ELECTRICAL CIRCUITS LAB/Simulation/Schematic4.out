@@ -1,0 +1,112 @@
+
+**** 11/26/22 22:49:33 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\ASUS\OneDrive - American International University-Bangladesh\Desktop\Simulation\Schematic4.sch
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+* Schematics Version 9.1 - Web Update 1
+* Sat Nov 26 22:49:33 2022
+
+
+
+** Analysis setup **
+.OP 
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "Schematic4.net"
+
+**** INCLUDING Schematic4.net ****
+* Schematics Netlist *
+
+
+
+R_R1         0 $N_0001  10  
+R_R2         $N_0001 $N_0002  20  
+R_R3         0 $N_0002  5  
+V_V1         $N_0002 0 20V
+R_R5         $N_0001 $N_0003  14  
+R_R6         $N_0002 $N_0003  6  
+
+**** RESUMING Schematic4.cir ****
+.INC "Schematic4.als"
+
+
+
+**** INCLUDING Schematic4.als ****
+* Schematics Aliases *
+
+.ALIASES
+R_R1            R1(1=0 2=$N_0001 )
+R_R2            R2(1=$N_0001 2=$N_0002 )
+R_R3            R3(1=0 2=$N_0002 )
+V_V1            V1(+=$N_0002 -=0 )
+R_R5            R5(1=$N_0001 2=$N_0003 )
+R_R6            R6(1=$N_0002 2=$N_0003 )
+.ENDALIASES
+
+
+**** RESUMING Schematic4.cir ****
+.probe
+
+
+.END
+
+**** 11/26/22 22:49:33 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\ASUS\OneDrive - American International University-Bangladesh\Desktop\Simulation\Schematic4.sch
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+($N_0001)   10.0000                   ($N_0002)   20.0000                       
+
+($N_0003)   17.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -5.000E+00
+
+    TOTAL POWER DISSIPATION   1.00E+02  WATTS
+
+
+**** 11/26/22 22:49:33 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\ASUS\OneDrive - American International University-Bangladesh\Desktop\Simulation\Schematic4.sch
+
+
+ ****     OPERATING POINT INFORMATION      TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME            0.00
+

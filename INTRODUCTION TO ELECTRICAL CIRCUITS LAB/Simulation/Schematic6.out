@@ -1,0 +1,134 @@
+
+**** 11/26/22 23:31:27 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\ASUS\OneDrive - American International University-Bangladesh\Desktop\Simulation\Schematic6.sch
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+* Schematics Version 9.1 - Web Update 1
+* Sat Nov 26 23:28:18 2022
+
+
+
+** Analysis setup **
+.tran 0ns 50ms
+.OP 
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "Schematic6.net"
+
+**** INCLUDING Schematic6.net ****
+* Schematics Netlist *
+
+
+
+V_V2         $N_0001 0  
++PULSE 0 10 0 0 0 1 
+R_R1         $N_0001 $N_0002  2k  
+L_L1         $N_0002 0  4  
+
+**** RESUMING Schematic6.cir ****
+.INC "Schematic6.als"
+
+
+
+**** INCLUDING Schematic6.als ****
+* Schematics Aliases *
+
+.ALIASES
+V_V2            V2(+=$N_0001 -=0 )
+R_R1            R1(1=$N_0001 2=$N_0002 )
+L_L1            L1(1=$N_0002 2=0 )
+.ENDALIASES
+
+
+**** RESUMING Schematic6.cir ****
+.probe
+
+
+.END
+
+**** 11/26/22 23:31:27 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\ASUS\OneDrive - American International University-Bangladesh\Desktop\Simulation\Schematic6.sch
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+($N_0001)    0.0000                   ($N_0002)    0.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V2         0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+**** 11/26/22 23:31:27 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\ASUS\OneDrive - American International University-Bangladesh\Desktop\Simulation\Schematic6.sch
+
+
+ ****     OPERATING POINT INFORMATION      TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+
+**** 11/26/22 23:31:27 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\ASUS\OneDrive - American International University-Bangladesh\Desktop\Simulation\Schematic6.sch
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+($N_0001)    0.0000                   ($N_0002)    0.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V2         0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME            0.00
+
