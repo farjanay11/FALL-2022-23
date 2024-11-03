@@ -1,0 +1,22 @@
+* C:\Users\User\Desktop\IEC LAB PSPIECE Data & Schematics\Schematics\3.sch
+
+* Schematics Version 9.1 - Web Update 1
+* Sat Nov 26 23:38:50 2022
+
+
+
+** Analysis setup **
+.OP 
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "3.net"
+.INC "3.als"
+
+
+.probe
+
+
+.END

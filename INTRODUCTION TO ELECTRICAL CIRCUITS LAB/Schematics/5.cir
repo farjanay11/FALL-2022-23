@@ -1,0 +1,23 @@
+* C:\Users\User\Desktop\IEC LAB PSPIECE Data & Schematics\Schematics\5.sch
+
+* Schematics Version 9.1 - Web Update 1
+* Sat Nov 26 23:57:25 2022
+
+
+
+** Analysis setup **
+.tran 0ns 10ms
+.OP 
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "5.net"
+.INC "5.als"
+
+
+.probe
+
+
+.END

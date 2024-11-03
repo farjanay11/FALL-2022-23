@@ -1,0 +1,22 @@
+* C:\Users\User\Desktop\IEC LAB PSPIECE Data & Schematics\Schematics\8.sch
+
+* Schematics Version 9.1 - Web Update 1
+* Sun Nov 27 00:50:13 2022
+
+
+
+** Analysis setup **
+.OP 
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "8.net"
+.INC "8.als"
+
+
+.probe
+
+
+.END
