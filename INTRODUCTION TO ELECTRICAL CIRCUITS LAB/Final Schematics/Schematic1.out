@@ -1,0 +1,152 @@
+
+**** 12/04/22 21:30:56 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\ASUS\OneDrive - American International University-Bangladesh\Desktop\IEC LAB PSPIECE Data & Schematics\Final Schematics\S
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+* Schematics Version 9.1 - Web Update 1
+* Sun Dec 04 14:42:01 2022
+
+
+
+** Analysis setup **
+.tran 0ns 100ms
+.OP 
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "Schematic1.net"
+
+**** INCLUDING Schematic1.net ****
+* Schematics Netlist *
+
+
+
+C_C1         0 $N_0001  1n  
+R_R3         $N_0003 $N_0002  560  
+R_R4         $N_0005 $N_0004  100  
+R_R2         $N_0006 $N_0005  100  
+R_R1         $N_0001 $N_0004  560  
+C_C3         $N_0003 $N_0004  10u  
+L_L2         0 $N_0006  20m  
+V_V2         $N_0002 0  
++PULSE 0 10 0 0 0 1 
+
+**** RESUMING Schematic1.cir ****
+.INC "Schematic1.als"
+
+
+
+**** INCLUDING Schematic1.als ****
+* Schematics Aliases *
+
+.ALIASES
+C_C1            C1(1=0 2=$N_0001 )
+R_R3            R3(1=$N_0003 2=$N_0002 )
+R_R4            R4(1=$N_0005 2=$N_0004 )
+R_R2            R2(1=$N_0006 2=$N_0005 )
+R_R1            R1(1=$N_0001 2=$N_0004 )
+C_C3            C3(1=$N_0003 2=$N_0004 )
+L_L2            L2(1=0 2=$N_0006 )
+V_V2            V2(+=$N_0002 -=0 )
+.ENDALIASES
+
+
+**** RESUMING Schematic1.cir ****
+.probe
+
+
+.END
+
+**** 12/04/22 21:30:56 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\ASUS\OneDrive - American International University-Bangladesh\Desktop\IEC LAB PSPIECE Data & Schematics\Final Schematics\S
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+($N_0001)    0.0000                   ($N_0002)    0.0000                       
+
+($N_0003)    0.0000                   ($N_0004)    0.0000                       
+
+($N_0005)    0.0000                   ($N_0006)    0.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V2         0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+**** 12/04/22 21:30:56 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\ASUS\OneDrive - American International University-Bangladesh\Desktop\IEC LAB PSPIECE Data & Schematics\Final Schematics\S
+
+
+ ****     OPERATING POINT INFORMATION      TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+
+**** 12/04/22 21:30:56 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\ASUS\OneDrive - American International University-Bangladesh\Desktop\IEC LAB PSPIECE Data & Schematics\Final Schematics\S
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+($N_0001)    0.0000                   ($N_0002)    0.0000                       
+
+($N_0003)    0.0000                   ($N_0004)    0.0000                       
+
+($N_0005)    0.0000                   ($N_0006)    0.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V2         0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME            0.00
+

@@ -1,0 +1,23 @@
+* C:\Users\ASUS\OneDrive - American International University-Bangladesh\Desktop\IEC LAB PSPIECE Data & Schematics\Final Schematics\Schematic0.1.sch
+
+* Schematics Version 9.1 - Web Update 1
+* Sun Nov 27 16:41:23 2022
+
+
+
+** Analysis setup **
+.tran 0ns 400ms
+.OP 
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "Schematic0.1.net"
+.INC "Schematic0.1.als"
+
+
+.probe
+
+
+.END
